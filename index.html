@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coding Portfolio</title>
+    <title>Juan Giron Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>My Coding Portfolio</h1>
+        <h1>Juan Giron Portfolio</h1>
         <nav>
-            <ul>
+            <ul class="botones_cabecera">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,53 +22,83 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I am [Your Name], a passionate software developer with experience in C, C++, Java, Bash, OpenGL with GLEW, CUDA, HTML5, and PHP. Welcome to my portfolio where I showcase some of my projects.</p>
+            <p>
+                Hello, I am Juan, a computer engineering student
+                currently finishing 3rd year at
+                <i>Universidad Complutense</i>
+                Welcome to my portfolio where I showcase some of 
+                my projects and technical skills.
+            </p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
 
             <article class="project">
-                <h3>Project 1: Awesome Project</h3>
-                <p>Description: This project is a [brief description]. It uses technologies like [technologies used].</p>
-                <p><a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
-                <img src="images/project1-screenshot.png" alt="Project 1 Screenshot">
+                <h3>Chess AI From Scratch</h3>
+                <p>Winter 2024 | C++11 OpenGL | <a href="https://github.com/Juanvoid01/ChessAI" target="_blank">Github</a></p>
+                <p>Description: Graphics engine with OpenGL, search function based on Alpha-beta pruning and iterative deepening. Enhanced with dynamic programming using transposition tables and Zobrist hashing. Utilizes C++11 features like smart pointers and move semantics.</p>
+                
+                <div class="video-wrapper">
+                    <video src="images/chessAI/partida.mp4" controls autoplay muted>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </article>
 
             <article class="project">
-                <h3>Project 2: Another Cool Project</h3>
-                <p>Description: This project is a [brief description]. It uses technologies like [technologies used].</p>
-                <p><a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
-                <img src="images/project2-screenshot.png" alt="Project 2 Screenshot">
+                <h3>Smartwatch on Samsung S3C44BOX</h3>
+                <p>Winter 2024 | C EclipseARM | <a href="https://github.com/Juanvoid01/Smartwatch" target="_blank">Github</a></p>
+                <p>Description: Developed for LCD screen, alarms with hardware interruption, voice notes, and sound. Implemented fixed point arithmetic and multithreading.</p>
             </article>
 
-            <!-- Add more projects as needed -->
+            <article class="project">
+                <h3>Algorithm Visualizer</h3>
+                <p>Spring 2023 | C++ | <a href="https://github.com/Juanvoid01/AlgorithmVisualizer" target="_blank">Github</a></p>
+                <p>Description: Application for simulating pathfinding and sorting algorithms. Implemented 11 algorithms such as Dijkstra, A*, and mergesort.</p>
+                
+                <div class="video-wrapper">
+                    <video src="images/algotihmViewer/path.mp4" controls autoplay muted>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <video src="images/algotihmViewer/sort.mp4" controls autoplay muted>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+
+            <article class="project">
+                <h3>Conway’s Game Of Life</h3>
+                <p>Summer 2023 | Java | <a href="https://github.com/Juanvoid01/GameOfLife" target="_blank">Github</a></p>
+                <p>Description: Implementation of cellular automata with statistics and different game variants. Utilized MVC, observer, and factory patterns.</p>
+                
+                <div class="video-wrapper">
+                    <video src="images/gameOfLife/simulacion.webm" controls autoplay muted>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
         </section>
 
-        <section id="videos">
-            <h2>Videos</h2>
-            <video src="images/gameOfLife/simulacion.webm" controls>
-                Your browser does not support the video tag.
-            </video>
-            <video src="images/chessAI/partida.mp4" controls>
-                Your browser does not support the video tag.
-            </video>
-            <video src="images/algotihmViewer/path.mp4" controls>
-                Your browser does not support the video tag.
-            </video>
-            <video src="images/algotihmViewer/sort.mp4" controls>
-                Your browser does not support the video tag.
-            </video>
-        </section>
 
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Proficient with: C++ 11, Embedded C, Java, Bash, MySQL, Linux Posix, Git, VHDL</li>
+                <li>Tools: CMake and Makefile, Visual Studio, Vscode, Eclipse ARM</li>
+            </ul>
+        </section>
+        
         <section id="contact">
             <h2>Contact</h2>
-            <p>If you would like to get in touch, please email me at <a href="mailto:youremail@example.com">youremail@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+            <p>If you would like to get in touch, please email me at <a href="mailto:jgironherranz@gmail.com">jgironherranz@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/juan-giron-herranz" target="_blank">LinkedIn</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Juan Girón. All rights reserved.</p>
     </footer>
 </body>
 </html>
