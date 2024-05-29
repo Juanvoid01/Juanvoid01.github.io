@@ -1,104 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Giron Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Juan Giron Portfolio</h1>
-        <nav>
-            <ul class="botones_cabecera">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+        <div class="foto-perfil">
+            <img src="images/perfil/foto.jpg" alt="Foto perfil">
+        </div>
+
+        <h1 class="titulo-cabecera">Juan Giron Portfolio</h1>
+
+
+
+        <nav class="botones_cabecera">
+            <ul>
+                <li><a href="#algorithmViewer">AlgorithmViewer</a></li>
+                <li><a href="#chessAI">ChessAI</a></li>
+                <li><a href="#gameOfLife">GameOfLife</a></li>
+                <li><a href="#smartWatch">SmartWatch</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                Hello, I am Juan, a computer engineering student
-                currently finishing 3rd year at
-                <i>Universidad Complutense</i>
-                Welcome to my portfolio where I showcase some of 
-                my projects and technical skills.
+            <p>Hello, I am Juan, a <i>computer engineering</i> student currently starting <i>4th</i> year at
+                <i>Universidad
+                    Complutense</i>.
             </p>
+            <p>Welcome to my portfolio where I showcase some of my projects.</p>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h1 class="projects-title">Projects</h1>
 
-            <article class="project">
-                <h3>Chess AI From Scratch</h3>
-                <p>Winter 2024 | C++11 OpenGL | <a href="https://github.com/Juanvoid01/ChessAI" target="_blank">Github</a></p>
-                <p>Description: Graphics engine with OpenGL, search function based on Alpha-beta pruning and iterative deepening. Enhanced with dynamic programming using transposition tables and Zobrist hashing. Utilizes C++11 features like smart pointers and move semantics.</p>
-                
+            <article class="project" id="algorithmViewer">
+                <h3 class="project-title">Algorithm Visualizer</h3>
+                <p class="project-subtitle">Spring 2023 | C++ | <a
+                        href="https://github.com/Juanvoid01/AlgorithmVisualizer" target="_blank">Github repository</a>
+                </p>
+                <p class="project-description">Application for simulating pathfinding and sorting algorithms.
+                    Implemented 11 algorithms
+                    such as Dijkstra, A*, and mergesort.
+                </p>
+                <p>* Graphics engine used : <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>.</p>
+                <h3>PathFinding</h3>
+                <p>
+                    You can place walls and obstacles. Then you can find the shortest path between the start and end
+                    node with different algorithms. You can generate a random maze using the recursive division
+                    algorithm.
+                </p>
+
+                <p>Algorithms implemented:</p>
+                <ul>
+                    <li>Dijkstra</li>
+                    <li>A*</li>
+                    <li>BreadthFirst</li>
+                    <li>DepthFirst</li>
+                    <li>Bidirectional</li>
+                </ul>
                 <div class="video-wrapper">
-                    <video src="images/chessAI/partida.mp4" controls autoplay muted>
+                    <video src="images/algotihmViewer/path.mp4" controls autoplay muted loop>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Sorting</h3>
+                <p>
+                    A sequence of numbers are generated randomly. Then you can sort it with different algorithms and
+                    visualize it, going forward and backward on the simulation.
+                </p>
+                <p>Algorithms implemented:</p>
+                <ul>
+                    <li>BubbleSort</li>
+                    <li>MergeSort</li>
+                    <li>QuickSort</li>
+                    <li>InsertionSort</li>
+                    <li>SelectionSort</li>
+                    <li>CocktailSort</li>
+                </ul>
+
+                <div class="video-wrapper">
+                    <video src="images/algotihmViewer/sort.mp4" controls autoplay muted loop>
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </article>
 
-            <article class="project">
-                <h3>Smartwatch on Samsung S3C44BOX</h3>
-                <p>Winter 2024 | C EclipseARM | <a href="https://github.com/Juanvoid01/Smartwatch" target="_blank">Github</a></p>
-                <p>Description: Developed for LCD screen, alarms with hardware interruption, voice notes, and sound. Implemented fixed point arithmetic and multithreading.</p>
-            </article>
+            <article class="project" id="chessAI">
+                <h2 class="project-title">Chess Engine based on Alpha-Beta pruning</h2>
+                <p class="project-subtitle">Winter 2024 | C++11 OpenGL | <a href="https://github.com/Juanvoid01/ChessAI"
+                        target="_blank">Github repository</a>
+                </p>
+                <p class="project-description">
+                    Chess Engine with search function based on Negamax algorithm (similar to minimax).
+                </p>
+                <b>Tentative game strength level : 1800 ELO (Amateur player). </b>
+                <p>* Custom graphics Engine developed with <a href="https://www.opengl.org/" target="_blank">OpenGL</a>.
+                </p>
+                <p> Implementation details :</p>
+                <ul>
+                    <li>Search enhanced with alpha-beta pruning.</li>
+                    <li>Transposition table using zobrist hashing.</li>
+                    <li>Quiescence search extension on captures.</li>
+                    <li>Iterative Deepening</li>
+                    <li>SelectionSort</li>
+                    <li>Materialistic evaluation.</li>
+                </ul>
 
-            <article class="project">
-                <h3>Algorithm Visualizer</h3>
-                <p>Spring 2023 | C++ | <a href="https://github.com/Juanvoid01/AlgorithmVisualizer" target="_blank">Github</a></p>
-                <p>Description: Application for simulating pathfinding and sorting algorithms. Implemented 11 algorithms such as Dijkstra, A*, and mergesort.</p>
-                
                 <div class="video-wrapper">
-                    <video src="images/algotihmViewer/path.mp4" controls autoplay muted>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-wrapper">
-                    <video src="images/algotihmViewer/sort.mp4" controls autoplay muted>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </article>
-
-            <article class="project">
-                <h3>Conway’s Game Of Life</h3>
-                <p>Summer 2023 | Java | <a href="https://github.com/Juanvoid01/GameOfLife" target="_blank">Github</a></p>
-                <p>Description: Implementation of cellular automata with statistics and different game variants. Utilized MVC, observer, and factory patterns.</p>
-                
-                <div class="video-wrapper">
-                    <video src="images/gameOfLife/simulacion.webm" controls autoplay muted>
+                    <video src="images/chessAI/partida.mp4" controls autoplay muted loop>
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </article>
-        </section>
 
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Proficient with: C++ 11, Embedded C, Java, Bash, MySQL, Linux Posix, Git, VHDL</li>
-                <li>Tools: CMake and Makefile, Visual Studio, Vscode, Eclipse ARM</li>
-            </ul>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you would like to get in touch, please email me at <a href="mailto:jgironherranz@gmail.com">jgironherranz@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/juan-giron-herranz" target="_blank">LinkedIn</a>.</p>
+            <article class="project" id="gameOfLife">
+                <h3 class="project-title">Conway’s Game Of Life</h3>
+                <p class="project-subtitle">Summer 2023 | Java | <a href="https://github.com/Juanvoid01/GameOfLife"
+                        target="_blank">Github repository</a>
+                </p>
+                <p class="project-description">Implementation of cellular automata with statistics and different game
+                    variants.
+                    Utilized MVC, observer, and factory patterns.
+                </p>
+                <p>* User interface created with <a href="https://en.wikipedia.org/wiki/Swing_(Java)"
+                        target="_blank">Swing</a>.
+                </p>
+                <p> Implementation details :</p>
+                <ul>
+                    <li>Finite sized map with toroidal <a href="https://en.wikipedia.org/wiki/Toroid"
+                            target="_blank">toroidal</a> shape.</li>
+                    <li>Model-View-Controler.</li>
+                    <li>Observer design pattern.</li>
+                    <li>Factory design pattern</li>
+                </ul>
+
+
+                <div class="video-wrapper">
+                    <video src="images/gameOfLife/simulacion.webm" controls autoplay muted loop>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+
+            <article class="project" id="smartWatch">
+                <h3 class="project-title">Smartwatch on Samsung S3C44BOX</h3>
+                <p class="project-subtitle">Winter 2024 | C EclipseARM | <a
+                        href="https://github.com/Juanvoid01/Smartwatch" target="_blank">Github repository</a></p>
+                <p class="project-description">Embedded software university project, Smartwatch developed in Samsung
+                    S3C44BOX microcontroller.
+                </p>
+
+                <p> Features :</p>
+                <ul>
+                    <li>Fixed-point arithmetic for statistical calculations.</li>
+                    <li>Multi-threading (cooperative scheduling).</li>
+                    <li>Audio recording and playback.</li>
+                    <li>LCD screen and Keypad for user input.</li>
+                    <li>Track for 7 statistics like velocity, calories and steps.</li>
+                </ul>
+                <h3>Main menu :</h3>
+                <div class="image-wrapper">
+                    <img src="images/smartwatch/principal.png" alt="smartwatch main menu">
+                </div>
+                <h3>Audio menu :</h3>
+                <div class="image-wrapper">
+                    <img src="images/smartwatch/audio.png" alt="smartwatch audio menu">
+                </div>
+                <h3>Statistics menu :</h3>
+                <div class="image-wrapper">
+                    <img src="images/smartwatch/estadisticas.png" alt="smartwatch statistics menu">
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/juan-giron-herranz" target="_blank">
+                <img src="images/icons/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/Juanvoid01" target="_blank">
+                <img src="images/icons/github.png" alt="Github">
+                Github
+            </a>
+
+            <a href="mailto:jgironherranz@gmail.com" target="_blank">
+                <img src="images/icons/email.png" alt="Email">
+                jgironherranz@gmail.com
+            </a>
+        </div>
         <p>&copy; 2024 Juan Girón. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
