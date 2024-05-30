@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="cabecera">
 
         <div class="foto-perfil">
             <img src="images/perfil/foto.jpg" alt="Foto perfil">
@@ -43,33 +43,50 @@
             <h1 class="projects-title">Projects</h1>
 
             <article class="project" id="algorithmViewer">
-                <h3 class="project-title">Algorithm Visualizer</h3>
-                <p class="project-subtitle">Spring 2023 | C++ | <a
-                        href="https://github.com/Juanvoid01/AlgorithmVisualizer" target="_blank">Github repository</a>
-                </p>
-                <p class="project-description">Application for simulating pathfinding and sorting algorithms.
-                </p>
-                <p>* Graphics engine used : <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>.</p>
-                <h3>PathFinding</h3>
-                <p>
-                    You can place walls and obstacles. Then you can find the shortest path between the start and end
-                    node with different algorithms. You can generate a random maze using the recursive division
-                    algorithm.
-                </p>
 
-                <p>Algorithms implemented:</p>
-                <ul>
-                    <li>Dijkstra</li>
-                    <li>A*</li>
-                    <li>BreadthFirst</li>
-                    <li>DepthFirst</li>
-                    <li>Bidirectional</li>
-                </ul>
-                <div class="video-wrapper">
-                    <video src="images/algotihmViewer/path.mp4" controls autoplay muted loop>
-                        Your browser does not support the video tag.
-                    </video>
+                <a href="#cabecera" class="arrow up">&uarr;</a>
+                <a href="#chessAI" class="arrow down">&darr;</a>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">Algorithm Visualizer</h3>
+                    <p class="project-subtitle">Spring 2023 | C++ | <a
+                            href="https://github.com/Juanvoid01/PathFinding-Sorting-Viewer" target="_blank">Github
+                            repository</a>
+                    </p>
+                    <p class="project-description">Application for simulating pathfinding and sorting algorithms.
+                    </p>
+                    <p>* Graphics engine used : <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>.</p>
+                    <h3>PathFinding</h3>
+                    <p>
+                        You can place walls and obstacles. Then you can find the shortest path between the start and end
+                        node with different algorithms. You can generate a random maze using the recursive division
+                        algorithm.
+                    </p>
+
+
                 </div>
+
+                <div class="project-show">
+
+                    <div class="project-show-list">
+                        <p>Algorithms implemented:</p>
+                        <ul>
+                            <li>Dijkstra</li>
+                            <li>A*</li>
+                            <li>BreadthFirst</li>
+                            <li>DepthFirst</li>
+                            <li>Bidirectional</li>
+                        </ul>
+                    </div>
+
+                    <div class="video-wrapper">
+                        <video src="images/algotihmViewer/path.mp4" controls autoplay muted loop>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
                 <h3>Sorting</h3>
                 <p>
                     A sequence of numbers are generated randomly. Then you can sort it with different algorithms and
@@ -93,26 +110,33 @@
             </article>
 
             <article class="project" id="chessAI">
-                <h2 class="project-title">Chess Engine based on Alpha-Beta pruning</h2>
-                <p class="project-subtitle">Winter 2024 | C++11 OpenGL | <a href="https://github.com/Juanvoid01/ChessAI"
-                        target="_blank">Github repository</a>
-                </p>
-                <p class="project-description">
-                    Chess Engine with search function based on Negamax algorithm (similar to minimax).
-                </p>
-                <b>Tentative game strength level : 1800 ELO (Amateur player). </b>
-                <p>* Custom graphics Engine developed with <a href="https://www.opengl.org/" target="_blank">OpenGL</a>.
-                </p>
-                <p> Implementation details :</p>
-                <ul>
-                    <li>Search enhanced with alpha-beta pruning.</li>
-                    <li>Transposition table using zobrist hashing.</li>
-                    <li>Quiescence search extension on captures.</li>
-                    <li>Iterative Deepening</li>
-                    <li>SelectionSort</li>
-                    <li>Materialistic evaluation.</li>
-                </ul>
 
+                <a href="#algorithmViewer" class="arrow up">&uarr;</a>
+                <a href="#gameOfLife" class="arrow down">&darr;</a>
+
+                <div class="project-content">
+
+                    <h2 class="project-title">Chess Engine based on Alpha-Beta pruning</h2>
+                    <p class="project-subtitle">Winter 2024 | C++11 OpenGL | <a
+                            href="https://github.com/Juanvoid01/Chess_AI" target="_blank">Github repository</a>
+                    </p>
+                    <p class="project-description">
+                        Chess Engine with search function based on Negamax algorithm (similar to minimax).
+                    </p>
+                    <b>Tentative game strength level : 1800 ELO (Amateur player). </b>
+                    <p>* Custom graphics Engine developed with <a href="https://www.opengl.org/"
+                            target="_blank">OpenGL</a>.
+                    </p>
+                    <p> Implementation details :</p>
+                    <ul>
+                        <li>Search enhanced with alpha-beta pruning.</li>
+                        <li>Transposition table using zobrist hashing.</li>
+                        <li>Quiescence search extension on captures.</li>
+                        <li>Iterative Deepening</li>
+                        <li>SelectionSort</li>
+                        <li>Materialistic evaluation.</li>
+                    </ul>
+                </div>
                 <div class="video-wrapper">
                     <video src="images/chessAI/partida.mp4" controls autoplay muted loop>
                         Your browser does not support the video tag.
@@ -122,27 +146,35 @@
 
 
             <article class="project" id="gameOfLife">
-                <h3 class="project-title">Conway’s Game Of Life</h3>
-                <p class="project-subtitle">Summer 2023 | Java | <a href="https://github.com/Juanvoid01/GameOfLife"
-                        target="_blank">Github repository</a>
-                </p>
-                <p class="project-description">Implementation of cellular automata with statistics and different game
-                    variants.
-                    Utilized MVC, observer, and factory patterns.
-                </p>
-                <p>* User interface created with <a href="https://en.wikipedia.org/wiki/Swing_(Java)"
-                        target="_blank">Swing</a>.
-                </p>
-                <p> Implementation details :</p>
-                <ul>
-                    <li>Finite sized map with toroidal <a href="https://en.wikipedia.org/wiki/Toroid"
-                            target="_blank">toroidal</a> shape.</li>
-                    <li>Model-View-Controler.</li>
-                    <li>Observer design pattern.</li>
-                    <li>Factory design pattern</li>
-                </ul>
 
+                <a href="#chessAI" class="arrow up">&uarr;</a>
+                <a href="#smartWatch" class="arrow down">&darr;</a>
 
+                <div class="project-content">
+                    <h3 class="project-title">Conway’s Game Of Life</h3>
+                    <p class="project-subtitle">Summer 2023 | Java | <a
+                            href="https://github.com/Juanvoid01/Game-Of-Life" target="_blank">Github repository</a>
+                    </p>
+
+                    <p class="project-description">Implementation of cellular automata with statistics and different
+                        game
+                        variants.
+                        Utilized MVC, observer, and factory patterns.
+                    </p>
+
+                    <p>* User interface created with <a href="https://en.wikipedia.org/wiki/Swing_(Java)"
+                            target="_blank">Swing</a>.
+                    </p>
+                    <p> Implementation details :</p>
+                    <ul>
+                        <li>Finite sized map with toroidal <a href="https://en.wikipedia.org/wiki/Toroid"
+                                target="_blank">toroidal</a> shape.</li>
+                        <li>Model-View-Controler.</li>
+                        <li>Observer design pattern.</li>
+                        <li>Factory design pattern</li>
+                    </ul>
+
+                </div>
                 <div class="video-wrapper">
                     <video src="images/gameOfLife/simulacion.webm" controls autoplay muted loop>
                         Your browser does not support the video tag.
@@ -151,21 +183,29 @@
             </article>
 
             <article class="project" id="smartWatch">
-                <h3 class="project-title">Smartwatch on Samsung S3C44BOX</h3>
-                <p class="project-subtitle">Winter 2024 | C EclipseARM | <a
-                        href="https://github.com/Juanvoid01/Smartwatch" target="_blank">Github repository</a></p>
-                <p class="project-description">Embedded software university project, Smartwatch developed in Samsung
-                    S3C44BOX microcontroller.
-                </p>
 
-                <p> Features :</p>
-                <ul>
-                    <li>Fixed-point arithmetic for statistical calculations.</li>
-                    <li>Multi-threading (cooperative scheduling).</li>
-                    <li>Audio recording and playback.</li>
-                    <li>LCD screen and Keypad for user input.</li>
-                    <li>Track for 7 statistics like velocity, calories and steps.</li>
-                </ul>
+                <a href="#gameOfLife" class="arrow up">&uarr;</a>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">Smartwatch on Samsung S3C44BOX</h3>
+                    <p class="project-subtitle">Winter 2024 | C EclipseARM | <a
+                            href="https://github.com/Juanvoid01/Smartwatch-s3c44box" target="_blank">Github
+                            repository</a>
+                    </p>
+                    <p class="project-description">Embedded software university project, Smartwatch developed in Samsung
+                        S3C44BOX microcontroller.
+                    </p>
+
+                    <p> Features :</p>
+                    <ul>
+                        <li>Fixed-point arithmetic for statistical calculations.</li>
+                        <li>Multi-threading (cooperative scheduling).</li>
+                        <li>Audio recording and playback.</li>
+                        <li>LCD screen and Keypad for user input.</li>
+                        <li>Track for 7 statistics like velocity, calories and steps.</li>
+                    </ul>
+                </div>
                 <h3>Main menu :</h3>
                 <div class="image-wrapper">
                     <img src="images/smartwatch/principal.png" alt="smartwatch main menu">

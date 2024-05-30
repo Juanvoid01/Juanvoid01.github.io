@@ -4,6 +4,10 @@
 *
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     font-size: 150%;
     background-color: #333;
@@ -30,6 +34,10 @@ main {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*
 *
 *   Cabecera
@@ -38,21 +46,22 @@ main {
 
 header .titulo-cabecera {
 
-    text-align : center;
+    text-align: center;
     justify-content: center;
 }
 
 .foto-perfil {
     float: right;
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    flex-shrink: 0;
+    /* Evita que la imagen se reduzca */
     margin-right: 10px;
     padding: 0px;
 }
 
 .foto-perfil img {
     width: 200px;
-    height: auto; 
-    border-radius: 50%; 
+    height: auto;
+    border-radius: 50%;
 }
 
 
@@ -65,30 +74,42 @@ header .titulo-cabecera {
 
 .botones_cabecera ul {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Elimina el padding predeterminado */
+    margin: 0;
+    /* Elimina el margen predeterminado */
 }
 
 .botones_cabecera li {
     width: 250px;
-    margin: 0 10px; /* Espacio entre los botones */
+    margin: 0 10px;
+    /* Espacio entre los botones */
 }
 
 .botones_cabecera a {
     display: block;
-    padding: 10px 0px; /* Espaciado interno del botón */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #fff; /* Color del texto */
-    background-color: #0073b1; /* Color de fondo del botón */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición para el hover */
+    padding: 10px 0px;
+    /* Espaciado interno del botón */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    color: #fff;
+    /* Color del texto */
+    background-color: #0073b1;
+    /* Color de fondo del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    /* Transición para el hover */
     text-align: center;
 }
 
 .botones_cabecera a:hover {
-    background-color: #005582; /* Color de fondo del botón al pasar el ratón */
+    background-color: #005582;
+    /* Color de fondo del botón al pasar el ratón */
 }
 
 
@@ -99,8 +120,7 @@ header .titulo-cabecera {
 *
 */
 
-.projects-title
-{
+.projects-title {
     font-size: 200%;
     text-align: center;
 }
@@ -109,24 +129,34 @@ header .titulo-cabecera {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 100px;
+    padding: 10px 10px;
     font-size: 150%;
     margin: 20px;
     margin-left: 50px;
     overflow: hidden;
 }
 
+.project-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 50px;
+}
+
 .project-title {
     font-size: 200%;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
 .project-subtitle {
     text-align: center;
     color: #777;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .project-subtitle a {
@@ -154,6 +184,24 @@ header .titulo-cabecera {
     margin-bottom: 5px;
 }
 
+.project-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.project-show-list
+{
+    display: flex;
+    flex-direction: column;   
+    justify-content: right;
+    border: 1px solid #ccc;
+}
+
 /*
 *
 *   Image styling
@@ -167,11 +215,9 @@ header .titulo-cabecera {
     border-radius: 10px;
     overflow: hidden;
     background: linear-gradient(135deg, #202020 0%, #000000 100%);
-    
-
 }
 
-.image-wrapper img{
+.image-wrapper img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -182,10 +228,10 @@ header .titulo-cabecera {
 *
 *   Video styling
 *
-*/ 
+*/
 
 .video-wrapper {
-    max-width: 50%;
+    max-width: 55%;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -234,34 +280,34 @@ footer {
 
 
 .contact-info {
-    text-align : center;
+    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px; /* Space between the buttons */
+    gap: 10px;
     margin: 20px;
 }
 
 .contact-info a {
     display: flex;
-    width: 215px; 
+    width: 215px;
     padding: 10px;
     text-decoration: none;
-    color: #fff; 
-    background-color: #597d90; 
+    color: #fff;
+    background-color: #597d90;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .contact-info a img {
     margin-right: 10px;
-    width: 25px; 
-    height: auto; 
+    width: 25px;
+    height: auto;
 }
 
 .contact-info a:hover {
-    background-color: #01121b; 
+    background-color: #01121b;
 }
 
 
@@ -325,4 +371,44 @@ footer {
     #about p {
         font-size: 16px;
     }
+}
+
+/*
+*
+*   Flechas de desplazamiento
+*
+*/
+
+.arrow {
+    float: right;
+    text-decoration: none;
+    font-size: 3em;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #979898;
+    border-color: #000000;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow.up {
+    top: 10px;
+}
+
+.arrow.down {
+    bottom: 10px;
+}
+
+.arrow:hover {
+
+    background-color: #007BFF;
+    transform: scale(1.2) rotate(3deg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
