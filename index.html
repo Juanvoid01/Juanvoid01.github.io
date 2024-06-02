@@ -4,243 +4,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Juan Portfolio">
+    <meta name="keywords" content="Juan Portfolio">
+
     <title>Juan Giron Portfolio</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header id="cabecera">
+    <header id="cabecera" class="header container">
 
-        <div class="foto-perfil">
-            <img src="images/perfil/foto.jpg" alt="Foto perfil">
+        <div class="header__content">
+
+            <button aria-label="mobile nav button" class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <h1 class="header__title">Juan Giron Portfolio</h1>
+
+            <nav>
+                <ul class="header__menu">
+                    <li><a class="header__link" href="#algorithmViewer">AlgorithmViewer</a></li>
+                    <li><a class="header__link" href="#chessAI">ChessAI</a></li>
+                    <li><a class="header__link" href="#gameOfLife">GameOfLife</a></li>
+                    <li><a class="header__link" href="#smartWatch">SmartWatch</a></li>
+                    <li>
+                        <button aria-label="theme-toggle btn" class="theme-toggle header__sun">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="header__resume btn" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
-        <h1 class="titulo-cabecera">Juan Giron Portfolio</h1>
+        <img class="header__photo" src="images/perfil/foto.jpg" alt="Foto perfil">
 
 
-
-        <nav class="botones_cabecera">
-            <ul>
-                <li><a href="#algorithmViewer">AlgorithmViewer</a></li>
-                <li><a href="#chessAI">ChessAI</a></li>
-                <li><a href="#gameOfLife">GameOfLife</a></li>
-                <li><a href="#smartWatch">SmartWatch</a></li>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+                <li>
+                    <a class="mobile-nav__link" href="#algorithmViewer">AlgorithmViewer</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#chessAI">ChessAI</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#gameOfLife">GameOfLife</a>
+                </li>
+                <li>
+                    <a class="mobile-nav__link" href="#smartWatch">SmartWatch</a>
+                </li>
+                <li class="mobile-nav__link-line"></li>
+                <li>
+                    <button aria-label="theme-toggle btn" class="theme-toggle mobile-nav__sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <a class="mobile-nav__btn btn" href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
-    </header>
-
+    </div>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello, I am Juan, a <i>computer engineering</i> student currently starting <i>4th</i> year at
-                <i>Universidad
-                    Complutense</i>.
-            </p>
-            <p>Welcome to my portfolio where I showcase some of my projects.</p>
+        <section id="about" class="about container">
+            <div>
+
+            </div>
+            <h2 class="about__title">About</h2>
+            <div class="about__content">
+                <div class="about__description">
+                    <p>Hello, I am Juan, a <strong>computer engineering</strong> student currently starting <i>4th</i>
+                        year at
+                        <i>Universidad
+                            Complutense de Madrid</i>.
+                    </p>
+                    <p>Welcome to my portfolio where I showcase some of my projects.</p>
+                </div>
+
+
+
+                <hr class="about__hr">
+
+                <h3 class="about__subtitle">Technologies</h3>
+                <div class="about__ul-container">
+                    <ul class="about__ul">
+                        <li class="about__list">C++ 11</li>
+                        <li class="about__list">Embedded C</li>
+                        <li class="about__list">Java</li>
+                    </ul>
+                    <ul class="about__ul">
+                        <li class="about__list">Linux</li>
+                        <li class="about__list">VHDL</li>
+                        <li class="about__list">Bash</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h1 class="projects-title">Projects</h1>
+            <h2 class="projects-title">Projects</h2>
 
-            <article class="project" id="algorithmViewer">
+            <article class="project container" id="algorithmViewer">
 
+                <!--
                 <a href="#cabecera" class="arrow up">&uarr;</a>
                 <a href="#chessAI" class="arrow down">&darr;</a>
 
-                <div class="project-content">
+                -->
+                <div class="project__content">
+                    <div class="project__info">
+                        <h3 class="project__title">Algorithm Visualizer</h3>
+                        <p class="project__subtitle">Spring 2023 | C++ | <a
+                                href="https://github.com/Juanvoid01/PathFinding-Sorting-Viewer" target="_blank">Github
+                                repository</a>
+                        </p>
+                        <p class="project__description">Application for simulating pathfinding and sorting algorithms.
+                        </p>
+                        <p>* Graphics engine used : <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>.</p>
+                        <h3>PathFinding</h3>
+                        <p>
+                            You can place walls and obstacles. Then you can find the shortest path between the start and
+                            end
+                            node with different algorithms. You can generate a random maze using the recursive division
+                            algorithm.
+                        </p>
 
-                    <h3 class="project-title">Algorithm Visualizer</h3>
-                    <p class="project-subtitle">Spring 2023 | C++ | <a
-                            href="https://github.com/Juanvoid01/PathFinding-Sorting-Viewer" target="_blank">Github
-                            repository</a>
-                    </p>
-                    <p class="project-description">Application for simulating pathfinding and sorting algorithms.
-                    </p>
-                    <p>* Graphics engine used : <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>.</p>
-                    <h3>PathFinding</h3>
-                    <p>
-                        You can place walls and obstacles. Then you can find the shortest path between the start and end
-                        node with different algorithms. You can generate a random maze using the recursive division
-                        algorithm.
-                    </p>
+                        <div class="project__list">
+                            <h4>Algorithms implemented:</h4>
+                            <ul>
+                                <li>Dijkstra</li>
+                                <li>A*</li>
+                                <li>BreadthFirst</li>
+                                <li>DepthFirst</li>
+                                <li>Bidirectional</li>
+                            </ul>
+                        </div>
+                    </div>
 
 
+                    <div class="project__show">
+                        <div class="video-wrapper">
+                            <video src="images/algotihmViewer/path.mp4" controls autoplay muted loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-show">
+                <hr class="project__hr">
 
-                    <div class="project-show-list">
-                        <p>Algorithms implemented:</p>
+                <div class="project__content">
+                    <div class="project__info">
+                        <h3>Sorting</h3>
+                        <p>
+                            A sequence of numbers are generated randomly. Then you can sort it with different algorithms
+                            and
+                            visualize it, going forward and backward on the simulation.
+                        </p>
+                        <h4>Algorithms implemented:</h4>
                         <ul>
-                            <li>Dijkstra</li>
-                            <li>A*</li>
-                            <li>BreadthFirst</li>
-                            <li>DepthFirst</li>
-                            <li>Bidirectional</li>
+                            <li>BubbleSort</li>
+                            <li>MergeSort</li>
+                            <li>QuickSort</li>
+                            <li>InsertionSort</li>
+                            <li>SelectionSort</li>
+                            <li>CocktailSort</li>
                         </ul>
                     </div>
 
-                    <div class="video-wrapper">
-                        <video src="images/algotihmViewer/path.mp4" controls autoplay muted loop>
-                            Your browser does not support the video tag.
-                        </video>
+                    <div class="project__show">
+                        <div class="video-wrapper">
+                            <video src="images/algotihmViewer/sort.mp4" controls autoplay muted loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="project container" id="chessAI">
+
+                <!--<a href="#algorithmViewer" class="arrow up">&uarr;</a>
+                <a href="#gameOfLife" class="arrow down">&darr;</a>-->
+
+                <div class="project__content">
+                    <div class="project__info">
+
+                        <h2 class="project__title">Chess Engine with Alpha-Beta pruning</h2>
+                        <p class="project__subtitle">Winter 2024 | C++11 OpenGL | <a
+                                href="https://github.com/Juanvoid01/Chess_AI" target="_blank">Github repository</a>
+                        </p>
+                        <p class="project__description">
+                            Chess Engine with search function based on Negamax algorithm (similar to minimax).
+                        </p>
+                        <b>Tentative game strength level : 1800 ELO (Amateur player). </b>
+                        <p>* Custom graphics Engine developed with <a href="https://www.opengl.org/"
+                                target="_blank">OpenGL</a>.
+                        </p>
+                        <h4> Implementation details :</h4>
+                        <ul>
+                            <li>Search enhanced with alpha-beta pruning.</li>
+                            <li>Transposition table using zobrist hashing.</li>
+                            <li>Quiescence search extension on captures.</li>
+                            <li>Iterative Deepening</li>
+                            <li>Materialistic evaluation.</li>
+                        </ul>
+                    </div>
+                    <div class="project__show">
+                        <div class="video-wrapper">
+                            <video src="images/chessAI/partida.mp4" controls autoplay muted loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project container" id="smartWatch">
+
+                <!--<a href="#gameOfLife" class="arrow up">&uarr;</a>-->
+
+                <div class="project__content">
+                    <div class="project__info">
+                        <h3 class="project__title">Smartwatch on Samsung S3C44BOX</h3>
+                        <p class="project__subtitle">Winter 2024 | C EclipseARM | <a
+                                href="https://github.com/Juanvoid01/Smartwatch-s3c44box" target="_blank">Github
+                                repository</a>
+                        </p>
+                        <p class="project__description">Embedded software university project, Smartwatch developed in
+                            Samsung
+                            S3C44BOX microcontroller.
+                        </p>
+
+                        <h4> Features :</h4>
+                        <ul>
+                            <li>Fixed-point arithmetic for statistical calculations.</li>
+                            <li>Multi-threading (cooperative scheduling).</li>
+                            <li>Audio recording and playback.</li>
+                            <li>LCD screen and Keypad for user input.</li>
+                            <li>Track for 7 statistics like velocity, calories and steps.</li>
+                        </ul>
+                    </div>
+                    <div class="project__show">
+                        <div class="image-wrapper">
+                            <img src="images/smartwatch/principal.png" alt="smartwatch main menu">
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="project__hr">
+
+                <div class="project__content">
+                    <div class="project__info">
+                        <h3>Audio menu :</h3>
+
+                        <p class="project__description">
+                            User can record audio as voice notes. They are stored
+                             in memory and can be reproduced later at normal speed and double speed.
+                        </p>
+
+                        <ul>
+                            <li>Audio recording and playback.</li>
+                            <li>Storage for 3 voice notes</li>
+                            <li>Play at normal and x2 speed</li>
+                        </ul>
+                    </div>
+                    <div class="project__show">
+                        <div class="image-wrapper">
+                            <img src="images/smartwatch/audio.png" alt="smartwatch audio menu">
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="project__hr">
+
+                <div class="project__content">
+                    <div class="project__info">
+
+                        <h3>Statistics menu :</h3>
+
+                        <p class="project__description">We count the steps and heartbeats that occur in 0.5 second intervals.
+                            Using the results from the last 10 seconds (20 samples)
+                            we calculate the average steps and heartbeats per minute.
+
+                            The rest of the statistics are derived from these averages.
+                            Some of these are decimal numbers, so we use Q22.10 fixed-point representation
+                            and perform calculations using fixed-point arithmetic.
+                        </p>
+
+                        <ul>
+                            <li>User select his three favorites statistics</li>
+                            <li>Fixed-point arithmetic for statistical calculations.</li>
+                            <li>Velocity</li>
+                            <li>Steps</li>
+                            <li>Heart beats</li>
+                            <li>Calories</li>
+                        </ul>
+                    </div>
+                    <div class="project__show">
+                        <div class="image-wrapper">
+                            <img src="images/smartwatch/estadisticas.png" alt="smartwatch statistics menu">
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article class="project container" id="gameOfLife">
+
+                <!--<a href="#chessAI" class="arrow up">&uarr;</a>
+                <a href="#smartWatch" class="arrow down">&darr;</a>-->
+
+                <div class="project__content">
+                    <div class="project__info">
+                        <h3 class="project__title">Conway’s Game Of Life</h3>
+                        <p class="project__subtitle">Summer 2023 | Java | <a
+                                href="https://github.com/Juanvoid01/Game-Of-Life" target="_blank">Github repository</a>
+                        </p>
+
+                        <p class="project__description">Implementation of cellular automata with statistics and
+                            different
+                            game
+                            variants.
+                            Utilized MVC, observer, and factory patterns.
+                        </p>
+
+                        <p>* User interface created with <a href="https://en.wikipedia.org/wiki/Swing_(Java)"
+                                target="_blank">Swing</a>.
+                        </p>
+
+                        <h4> Implementation details :</h4>
+                        <ul>
+                            <li>Finite sized map with toroidal <a href="https://en.wikipedia.org/wiki/Toroid"
+                                    target="_blank">toroidal</a> shape.</li>
+                            <li>Model-View-Controler.</li>
+                            <li>Observer design pattern.</li>
+                            <li>Factory design pattern</li>
+                        </ul>
+                    </div>
+                    <div class="project__show">
+                        <div class="video-wrapper">
+                            <video src="images/gameOfLife/simulacion.webm" controls autoplay muted loop>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
 
-                <h3>Sorting</h3>
-                <p>
-                    A sequence of numbers are generated randomly. Then you can sort it with different algorithms and
-                    visualize it, going forward and backward on the simulation.
-                </p>
-                <p>Algorithms implemented:</p>
-                <ul>
-                    <li>BubbleSort</li>
-                    <li>MergeSort</li>
-                    <li>QuickSort</li>
-                    <li>InsertionSort</li>
-                    <li>SelectionSort</li>
-                    <li>CocktailSort</li>
-                </ul>
 
-                <div class="video-wrapper">
-                    <video src="images/algotihmViewer/sort.mp4" controls autoplay muted loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </article>
-
-            <article class="project" id="chessAI">
-
-                <a href="#algorithmViewer" class="arrow up">&uarr;</a>
-                <a href="#gameOfLife" class="arrow down">&darr;</a>
-
-                <div class="project-content">
-
-                    <h2 class="project-title">Chess Engine based on Alpha-Beta pruning</h2>
-                    <p class="project-subtitle">Winter 2024 | C++11 OpenGL | <a
-                            href="https://github.com/Juanvoid01/Chess_AI" target="_blank">Github repository</a>
-                    </p>
-                    <p class="project-description">
-                        Chess Engine with search function based on Negamax algorithm (similar to minimax).
-                    </p>
-                    <b>Tentative game strength level : 1800 ELO (Amateur player). </b>
-                    <p>* Custom graphics Engine developed with <a href="https://www.opengl.org/"
-                            target="_blank">OpenGL</a>.
-                    </p>
-                    <p> Implementation details :</p>
-                    <ul>
-                        <li>Search enhanced with alpha-beta pruning.</li>
-                        <li>Transposition table using zobrist hashing.</li>
-                        <li>Quiescence search extension on captures.</li>
-                        <li>Iterative Deepening</li>
-                        <li>SelectionSort</li>
-                        <li>Materialistic evaluation.</li>
-                    </ul>
-                </div>
-                <div class="video-wrapper">
-                    <video src="images/chessAI/partida.mp4" controls autoplay muted loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </article>
-
-
-            <article class="project" id="gameOfLife">
-
-                <a href="#chessAI" class="arrow up">&uarr;</a>
-                <a href="#smartWatch" class="arrow down">&darr;</a>
-
-                <div class="project-content">
-                    <h3 class="project-title">Conway’s Game Of Life</h3>
-                    <p class="project-subtitle">Summer 2023 | Java | <a
-                            href="https://github.com/Juanvoid01/Game-Of-Life" target="_blank">Github repository</a>
-                    </p>
-
-                    <p class="project-description">Implementation of cellular automata with statistics and different
-                        game
-                        variants.
-                        Utilized MVC, observer, and factory patterns.
-                    </p>
-
-                    <p>* User interface created with <a href="https://en.wikipedia.org/wiki/Swing_(Java)"
-                            target="_blank">Swing</a>.
-                    </p>
-                    <p> Implementation details :</p>
-                    <ul>
-                        <li>Finite sized map with toroidal <a href="https://en.wikipedia.org/wiki/Toroid"
-                                target="_blank">toroidal</a> shape.</li>
-                        <li>Model-View-Controler.</li>
-                        <li>Observer design pattern.</li>
-                        <li>Factory design pattern</li>
-                    </ul>
-
-                </div>
-                <div class="video-wrapper">
-                    <video src="images/gameOfLife/simulacion.webm" controls autoplay muted loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </article>
-
-            <article class="project" id="smartWatch">
-
-                <a href="#gameOfLife" class="arrow up">&uarr;</a>
-
-                <div class="project-content">
-
-                    <h3 class="project-title">Smartwatch on Samsung S3C44BOX</h3>
-                    <p class="project-subtitle">Winter 2024 | C EclipseARM | <a
-                            href="https://github.com/Juanvoid01/Smartwatch-s3c44box" target="_blank">Github
-                            repository</a>
-                    </p>
-                    <p class="project-description">Embedded software university project, Smartwatch developed in Samsung
-                        S3C44BOX microcontroller.
-                    </p>
-
-                    <p> Features :</p>
-                    <ul>
-                        <li>Fixed-point arithmetic for statistical calculations.</li>
-                        <li>Multi-threading (cooperative scheduling).</li>
-                        <li>Audio recording and playback.</li>
-                        <li>LCD screen and Keypad for user input.</li>
-                        <li>Track for 7 statistics like velocity, calories and steps.</li>
-                    </ul>
-                </div>
-                <h3>Main menu :</h3>
-                <div class="image-wrapper">
-                    <img src="images/smartwatch/principal.png" alt="smartwatch main menu">
-                </div>
-                <h3>Audio menu :</h3>
-                <div class="image-wrapper">
-                    <img src="images/smartwatch/audio.png" alt="smartwatch audio menu">
-                </div>
-                <h3>Statistics menu :</h3>
-                <div class="image-wrapper">
-                    <img src="images/smartwatch/estadisticas.png" alt="smartwatch statistics menu">
-                </div>
-                <p><br><br></p>
             </article>
         </section>
     </main>
 
-    <footer>
-        <div class="contact-info">
-            <a href="https://www.linkedin.com/in/juan-giron-herranz" target="_blank">
-                <img src="images/icons/linkedin.png" alt="LinkedIn">
-                LinkedIn
-            </a>
-            <a href="https://github.com/Juanvoid01" target="_blank">
-                <img src="images/icons/github.png" alt="Github">
-                Github
-            </a>
+    <footer class="footer">
 
-            <a href="mailto:jgironherranz@gmail.com" target="_blank">
-                <img src="images/icons/email.png" alt="Email">
-                jgironherranz@gmail.com
-            </a>
-        </div>
-        <p>&copy; 2024 Juan Girón. All rights reserved.</p>
+        <nav id="contact">
+            <ul class="footer__menu">
+                <li>
+                    <a class="footer__link" href="https://www.linkedin.com/in/juan-giron-herranz" target="_blank">
+                        <img class="footer__icon" src="images/icons/linkedin.png" alt="LinkedIn">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://github.com/Juanvoid01" target="_blank">
+                        <img class="footer__icon" src="images/icons/github.png" alt="Github">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a class="footer__link" href="mailto:jgironherranz@gmail.com" target="_blank">
+                        <img class="footer__icon" src="images/icons/email.png" alt="Email">
+                        jgironherranz@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h3 class="footer__title">~ Juan Giron ~</h3>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
